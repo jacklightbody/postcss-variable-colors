@@ -14,8 +14,9 @@ This is a simple node package to support converting colors into the css custom a
 Specify the `f` tag to force overwrite the output css file. 
 
 You can also pipe in with
+
 	cat input.css | variable-colors 
 	
 ## Todos
-- Write tests 
-- Better handling for color aliases- eg match white to #fff and #ffffff
+- Flesh out tests 
+- Better handling for color aliases- eg match white to #fff and #ffffff. Even spaces throw it off right now

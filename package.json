@@ -1,6 +1,6 @@
 {
   "name": "postcss-variable-colors",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Converts css files to use css custom properties to reduce duplication",
   "main": "index.js",
   "bin": {

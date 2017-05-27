@@ -5,7 +5,7 @@ This is a simple node package to support converting colors into the css custom a
 	
 ## Usage
 	var converter = require('postcss-variable-colors');
-	var convertedCss = converter('a { color: #fff; background: red url(foo.jpg); font-size: 12px; border-top: 1px solid red}')
+	var convertedCss = converter.convertFromCss('a { color: #fff; background: red url(foo.jpg); font-size: 12px; border-top: 1px solid red}')
 	
 	
 ## Command Line Usage
@@ -17,6 +17,5 @@ You can also pipe in with
 
 	cat input.css | variable-colors 
 	
-## Todos
-- Flesh out tests 
-- Better handling for color aliases- eg match white to #fff and #ffffff. Even spaces throw it off right now
+## Todo
+- Add tests for cli module

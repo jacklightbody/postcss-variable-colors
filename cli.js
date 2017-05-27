@@ -3,7 +3,7 @@
 * @Author: jack
 * @Date:   2017-05-19
 * @Last Modified by:   Jack Lightbody
-* @Last Modified time: 2017-05-22
+* @Last Modified time: 2017-05-27
 * Adapted from https://github.com/rsanchez/css-color-extractor-cli
 * Usage: postcss-variable-colors input.css output.css -f? 
 * -f to force overwrite
@@ -88,7 +88,7 @@ var Cli = function(inputFile, outputFile, options){
 	    });
 	}
 	function writeAndConvert(data){
-		writeOut(converter(data));
+		writeOut(converter.convertFromCss(data));
 	}
 	function writeOut(output){
 		if(typeof options.overwrite === 'undefined' && fs.existsSync(outputFile)){

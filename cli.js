@@ -15,19 +15,16 @@ var usage = [
     '-f, --overwrite                    Force Overwrite outputFile',
 ].join('\n');
 
-var argv = require('yargs')
-    .usage(usage)
-    .argv;
 
-var inputFile = argv._[0] || null;
 
-var outputFile = argv._[1] || null;
 
 var argv = require('yargs')
     .usage(usage)
     .alias('f', 'overwrite')
     .argv;
+var inputFile = argv._[0] || null;
 
+var outputFile = argv._[1] || null;
 var options = {
     overwrite: argv.f,
 };

@@ -1,6 +1,6 @@
 {
   "name": "postcss-variable-colors",
-  "version": "1.0.0",
+  "version": "0.9.1",
   "description": "Converts css files to use css custom properties to reduce duplication",
   "main": "index.js",
   "bin": {
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/jacklightbody/postcss-variable-colors.git"
   },
   "dependencies": {
-    "underscore": "^1.8.3",
+    "color": "^1.0.3",
     "css-color-extractor": "^0.0.5",
     "postcss": "^5.0.2",
     "yargs": "^3.22.2"

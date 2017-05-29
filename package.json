@@ -1,11 +1,15 @@
 {
-  "name": "postcss-variable-colors",
+  "name": "Css Color to Variable Converter",
   "version": "0.9.1",
   "description": "Converts css files to use css custom properties to reduce duplication",
   "main": "index.js",
   "bin": {
     "variable-colors": "./cli.js"
   },
+  "keywords": [
+    "css",
+    "color"
+  ],
   "scripts": {
     "test": "./node_modules/.bin/mocha"
   },
@@ -14,7 +18,7 @@
     "url": "git+https://github.com/jacklightbody/postcss-variable-colors.git"
   },
   "dependencies": {
-    "color": "^1.0.3",
+    "color": "^0.10.1",
     "css-color-extractor": "^0.0.5",
     "postcss": "^5.0.2",
     "yargs": "^3.22.2"
@@ -24,7 +28,7 @@
     "mocha": "^3.4.2"
   },
   "author": "Jack Lightbody <jack.lightbody+npm@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jacklightbody/postcss-variable-colors/issues"
   },
